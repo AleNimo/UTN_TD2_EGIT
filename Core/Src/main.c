@@ -347,7 +347,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 
 			htim2.Init.Period = 250*MS;		//Toggle de 2Hz
 			HAL_TIM_Base_Init(&htim2);
-			HAL_Delay(500);
+
 			HAL_TIM_Base_Start(&htim2);
 		}
 		else if(cuenta >= UN_SEG && cuenta < TRES_SEG)
