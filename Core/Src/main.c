@@ -345,7 +345,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 		{
 			HAL_TIM_Base_Stop(&htim2);
 
-			htim2.Init.Period = 250*MS;	//Toggle de 2Hz
+			htim2.Init.Period = 250*MS;		//Toggle de 2Hz
 			HAL_TIM_Base_Init(&htim2);
 
 			HAL_TIM_Base_Start(&htim2);
@@ -354,7 +354,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 		{
 			HAL_TIM_Base_Stop(&htim2);
 
-			htim2.Init.Period = 500*MS;	//Toggle de 1Hz
+			htim2.Init.Period = 500*MS;		//Toggle de 1Hz
 			HAL_TIM_Base_Init(&htim2);
 
 			HAL_TIM_Base_Start(&htim2);
